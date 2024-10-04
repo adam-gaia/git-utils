@@ -1,0 +1,24 @@
+[package]
+name = "git-forked"
+description = "TODO"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/adam-gaia/git-forked"
+repository = "https://github.com/adam-gaia/git-forked"
+
+[dependencies]
+clap = { version = "4.5.9", features = ["derive"] }
+color-eyre = "0.6.3"
+env_logger = "0.11.3"
+log = "0.4.22"
+directories = "5.0.1"
+serde = { version = "1.0.210", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["full", "macros", "process"] }
+which = "6.0.3"
+winnow = "0.6.18"
+thiserror = "1.0.63"
+commandstream = "0.2.0"
+
+[dev-dependencies]
+pretty_assertions = "1.4.1"
