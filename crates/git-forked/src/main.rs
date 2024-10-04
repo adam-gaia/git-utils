@@ -1,9 +1,9 @@
 use clap::{Parser, Subcommand};
 use color_eyre::Result;
 use log::info;
-use which::which;
 use std::path::PathBuf;
 use std::str::FromStr;
+use which::which;
 
 mod command;
 use command::run;
@@ -44,10 +44,10 @@ async fn main() -> Result<()> {
     match &args.command {
         Some(command) => {
             match command {
-                Commands::SetUpstream{ upstream } => {
+                Commands::SetUpstream { upstream } => {
                     run("", &[""]).await?;
-                },
-                Commands::Fork{ upstream } => {
+                }
+                Commands::Fork { upstream } => {
                     // TODO
                     info!("TODO: Command::Todo");
                 }
