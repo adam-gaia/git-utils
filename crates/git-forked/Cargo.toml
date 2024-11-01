@@ -15,7 +15,7 @@ log = "0.4.22"
 directories = "5.0.1"
 serde = { version = "1.0.210", features = ["derive"] }
 tokio = { version = "1.40.0", features = ["full", "macros", "process"] }
-which = "6.0.3"
+which = "7.0.0"
 winnow = "0.6.18"
 thiserror = "1.0.63"
 commandstream = "0.2.0"
